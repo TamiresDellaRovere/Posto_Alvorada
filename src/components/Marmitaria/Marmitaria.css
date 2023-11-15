@@ -1,0 +1,39 @@
+.marmitaria {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.text-center {
+  max-width: 1000px;
+}
+
+.link-whatsapp {
+  font-size: 3rem;
+  border: 0.5rem;
+
+}
+
+.link-whatsapp:hover {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.imgs-marmita {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img {
+  margin: 0;
+  max-width: 300px;
+  max-height: 350px;
+  padding: 10px;
+  align-items: center;
+}

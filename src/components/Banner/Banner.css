@@ -1,0 +1,36 @@
+/* Estilize o elemento .capa que terá o fundo com a imagem */
+.Banner {
+    position: relative; /* Garante que o pseudo-elemento esteja posicionado corretamente */
+    background: #000 url('../../images/capa-Banner/capa1.jpeg') no-repeat center center ;
+    background-size: cover;
+    height: 85vh;
+    width: 100%;
+}
+
+/* Crie o pseudo-elemento ::before para adicionar o efeito opaco */
+.Banner::before {
+    content: ''; /* Certifique-se de adicionar algum conteúdo ao pseudo-elemento */
+    position: absolute; /* Posicione o pseudo-elemento em relação ao elemento pai */
+    top: 0;
+    left: 0;
+    width: 100%; /* Defina a largura para cobrir todo o elemento pai */
+    height: 100%; /* Defina a altura para cobrir todo o elemento pai */
+    background-color: rgba(0, 0, 0, 0); /* Adicione a cor de fundo com opacidade (0.5 representa 50% de opacidade) */
+}
+
+/* Se necessário, ajuste a posição dos elementos filhos para que eles apareçam acima do pseudo-elemento */
+.BannerTexto {
+    color: #F9A717;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Mohave', sans-serif; 
+    text-shadow: 0 0 30px white;
+    padding: 1rem 0;    
+}
+
+.BannerTexto h1 {
+    font-size: 2.85rem;
+}
+
+

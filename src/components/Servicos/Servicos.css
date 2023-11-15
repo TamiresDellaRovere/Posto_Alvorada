@@ -1,0 +1,55 @@
+.div_servicos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.title-servicos {
+    font-family: 'Mohave', sans-serif;
+    font-weight: 600;
+    color: #0B1546;
+    font-size: 40px;
+    text-align: center;
+}
+
+.div-servicos-text {
+    max-width: 800px;
+    padding: 50px;
+}
+
+.p-servicos {
+    font-size: 23px;
+    font-weight: 500;
+    font-family: 'Mohave', sans-serif;
+    color: #0B1546;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.cardContainer {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.corpoCard {
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    color:#0B1546 !important;
+    font-family: 'Mohave', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.titleCard {
+    font-size: 25px !important;
+    text-align: center;
+}

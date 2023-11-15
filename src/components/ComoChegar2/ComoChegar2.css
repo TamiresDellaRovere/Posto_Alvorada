@@ -1,0 +1,33 @@
+.google-maps {
+    width: 280px;
+    height: 370px;
+}
+
+.div-maior-como-chegar {
+    background-color: #f3f3f3;
+    padding: 80px;
+}
+
+.title-card-como-chegar {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #F9A717;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.span-card-como-chegar {
+    color: gray;
+    font-weight: 500;
+}
+
+.img-card-como-chegar {
+    width: 280px;
+    height: 370px;
+    object-fit: cover;
+}
+
+.link-span-como-chegar {
+    color: #0F3386;
+    cursor: pointer;
+    text-decoration: none
+}
