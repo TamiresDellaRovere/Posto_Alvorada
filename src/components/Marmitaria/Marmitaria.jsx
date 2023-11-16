@@ -20,15 +20,15 @@ export function Marmitaria() {
           </p>
 
           <div className="link">
-          <h3>Peça em nosso Whatsapp</h3>
-          <Nav.Link
-            className="link-whatsapp"
-            href="https://api.whatsapp.com/send?phone=5517997248775&text=Ol%C3%A1%2C+gostaria+de+pedir+uma+marmita"
-            target="_blank"
-            rel="noreferrer"
-          />
-          <FaWhatsapp className="link-whatsapp" />
-        </div>
+            <h3>Peça em nosso Whatsapp</h3>
+            <Nav.Link
+              className="link-whatsapp"
+              href="https://api.whatsapp.com/send?phone=5517997248775&text=Ol%C3%A1%2C+gostaria+de+pedir+uma+marmita"
+              target="_blank"
+              rel="noreferrer">
+              <FaWhatsapp className="link-whatsapp" /> 
+            </Nav.Link>
+          </div>
         </div>
 
         <div className="imgs-marmita ms-5">
