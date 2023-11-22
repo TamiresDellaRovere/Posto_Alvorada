@@ -1,5 +1,10 @@
 import { Card } from 'react-bootstrap';
-import img2 from '../../images/conveniencias/bebidas.jpg';
+import imgDestilados from '../../images/conveniencias/destilados-conveniencia.jpg';
+import imgCervejas from '../../images/conveniencias/cervejas-conveniencia1.jpg';
+import imgRefri from '../../images/conveniencias/refrigerantes-conveniencia.jpg';
+import imgBalas from '../../images/conveniencias/balas-conveniencia.jpeg';
+import imgCarnes from '../../images/conveniencias/carnes-conveniencia.png';
+import imgChips from '../../images/conveniencias/chips-conveniencia.jpeg';
 import Slider from 'react-slick';
 import './Conveniencia.css';
 import { useEffect, useState } from 'react';
@@ -21,20 +26,20 @@ export function Conveniencia() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 728) {
-        setSliderSettings({
-          ...sliderSettings,
+        setSliderSettings((prevSettings) => ({
+          ...prevSettings,
           slidesToShow: 1,
-        });
+        }));
       } else if (window.innerWidth <= 990) {
-        setSliderSettings({
-          ...sliderSettings,
+        setSliderSettings((prevSettings) => ({
+          ...prevSettings,
           slidesToShow: 2,
-        });
+        }));
       } else {
-        setSliderSettings({
-          ...sliderSettings,
+        setSliderSettings((prevSettings) => ({
+          ...prevSettings,
           slidesToShow: 3,
-        });
+        }));
       }
     };
   
@@ -43,7 +48,7 @@ export function Conveniencia() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [sliderSettings]);
 
   return (
     <>
@@ -60,13 +65,13 @@ export function Conveniencia() {
               className={`slide ${activeCardIndex === 0 ? 'active-slide' : ''}`}
             >
               <Card className="item-card">
-                <Card.Img variant="top" src={img2} />
+                <Card.Img variant="top" src={imgDestilados} className="imagem-card"  />
                 <Card.Body className="card-body-slide">
                   <Card.Title className="fs-4 fw-bold text-center mb-2">
-                    Cervejas, destilados, e vinhos
+                    DESTILADOS
                   </Card.Title>
                   <Card.Text>
-                    Uma variedade de cervejas, destilados e vinhos para todos os
+                    Uma variedade de destilados, com as melhores marcas nacionais e importadas;
                     gostos.
                   </Card.Text>
                 </Card.Body>
@@ -76,10 +81,10 @@ export function Conveniencia() {
               className={`slide ${activeCardIndex === 1 ? 'active-slide' : ''}`}
             >
               <Card className="item-card ">
-                <Card.Img variant="top" src={img2} />
+                <Card.Img variant="top" src={imgRefri} className="imagem-card" />
                 <Card.Body className="card-body-slide">
                   <Card.Title className="fs-4 fw-bold text-center mb-2">
-                    Águas, refrigerantes e sucos
+                    REFRIGERANTES, ÁGUAS E SUCOS
                   </Card.Title>
                   <Card.Text>
                     Refresque-se com nossas opções de águas, refrigerantes e
@@ -93,10 +98,10 @@ export function Conveniencia() {
               className={`slide ${activeCardIndex === 2 ? 'active-slide' : ''}`}
             >
               <Card className="item-card ">
-                <Card.Img variant="top" src={img2} />
+                <Card.Img variant="top" src={imgBalas} className="imagem-card" />
                 <Card.Body className="card-body-slide">
                   <Card.Title className="fs-4 fw-bold text-center mb-2">
-                    Balas, Chicletes e chocolates
+                    BALAS, CHICLETES E CHOCOLATES
                   </Card.Title>
                   <Card.Text>
                     Satisfaça seu desejo por doces com nossa seleção de balas,
@@ -110,14 +115,13 @@ export function Conveniencia() {
               className={`slide ${activeCardIndex === 3 ? 'active-slide' : ''}`}
             >
               <Card className="item-card ">
-                <Card.Img variant="top" src={img2} />
+                <Card.Img variant="top" src={imgCervejas} className="imagem-card" />
                 <Card.Body className="card-body-slide">
                   <Card.Title className="fs-4 fw-bold text-center mb-2">
-                    Tabacaria
+                    CERVEJAS
                   </Card.Title>
                   <Card.Text>
-                    Encontre produtos de tabacaria, incluindo cigarros e
-                    acessórios.
+                    As melhores marcas, extremamente gelada a qualquer hora do dia.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -127,14 +131,14 @@ export function Conveniencia() {
               className={`slide ${activeCardIndex === 4 ? 'active-slide' : ''}`}
             >
               <Card className="item-card ">
-                <Card.Img variant="top" src={img2} />
+                <Card.Img variant="top" src={imgCarnes} className="imagem-card" />
                 <Card.Body className="card-body-slide">
                   <Card.Title className="fs-4 fw-bold text-center mb-2">
-                    Churrasco
+                    CHURRASCO
                   </Card.Title>
                   <Card.Text>
                     Prepare um churrasco delicioso com nossos produtos
-                    selecionados para churrasco.
+                    selecionados, vários tipos de cortes, para todos os gostos.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -143,14 +147,13 @@ export function Conveniencia() {
               className={`slide ${activeCardIndex === 5 ? 'active-slide' : ''}`}
             >
               <Card className="item-card ">
-                <Card.Img variant="top" src={img2} />
+                <Card.Img variant="top" src={imgChips} className="imagem-card"/>
                 <Card.Body className="card-body-slide">
                   <Card.Title className="fs-4 fw-bold text-center mb-2">
-                    Mercearia
+                    SALGADINHOS
                   </Card.Title>
                   <Card.Text>
-                    Itens essenciais de mercearia para suas necessidades
-                    diárias.
+                    Uma variedade de salgadinhos, amendoins, bolachas e outro itens de mercearia para o seu dia.
                   </Card.Text>
                 </Card.Body>
               </Card>

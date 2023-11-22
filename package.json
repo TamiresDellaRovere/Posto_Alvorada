@@ -1,8 +1,10 @@
 {
+  "homepage": "https://TamiresDellaRovere.github.io/Posto_Alvorada",
   "name": "postoalvorada",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^1.0.8",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.17.0",
