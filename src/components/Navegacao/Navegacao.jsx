@@ -55,7 +55,7 @@ export function Navegacao() {
                 to="container-conveniencia"
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={50}
                 duration={500}
               >
                 Conveniência
@@ -65,7 +65,7 @@ export function Navegacao() {
                 to="marmitaria"
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={10}
                 duration={500}
               >
                 Marmitaria
@@ -75,7 +75,7 @@ export function Navegacao() {
                 to="div-maior-como-chegar"
                 spy={true}
                 smooth={true}
-                offset={-15}
+                offset={0}
                 duration={200}
               >
                 Como Chegar

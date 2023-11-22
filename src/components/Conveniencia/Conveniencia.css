@@ -5,35 +5,40 @@
   background-color: #F9A717;
   padding: 80px;
 }
-.titulo-slide{
-  color: #0A1744;
-}
-.container-slide{
-  /* padding: 2rem 2rem; */
-  align-items: center!important; ;
+
+.titulo-conveniencia{
   text-align: center;
+  padding-bottom: 10px;
 }
-.titulo-sobre{
+
+.titulo-slide {
   color: #0A1744;
 }
 
-.card {
-  max-width: 16rem;
+.container-slide {
+  text-align: center;
+}
+
+.item-card {
+  max-width: 300px;
+  height: 22rem;
   margin: 0 auto;
 }
 
+.imagem-card {
+  width: 100%;
+  height: auto;
+}
+
 .card-body-slide {
-  height: 220px; 
   color: #0A1744;
 }
+
 .slick-track {
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
+  justify-content: center;
 }
+
 .slick-slide {
-  margin: 0 auto!important; /* Centraliza horizontalmente */ ;
-}
-
-@media (max-width: 990px) {
-
+  margin: 0 auto;
 }

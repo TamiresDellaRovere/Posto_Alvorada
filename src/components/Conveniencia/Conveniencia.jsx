@@ -18,7 +18,7 @@ export function Conveniencia() {
     speed: 500,
     slidesToShow: 3,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     arrows: true,
     beforeChange: (next) => setActiveCardIndex(next),
   });
@@ -48,15 +48,15 @@ export function Conveniencia() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [sliderSettings]);
+  }, []);
 
   return (
     <>
       <section className="container-conveniencia">
-        <div className="ms-3 titulo-slide mb-5 text-center">
+        <div className="titulo-conveniencia">
           <h2 className="fs-1">Conveniência Alvorada</h2>
-          <p className="fs-5">
-            Não importa o horário, tudo que você precisa ao seu alcançe!
+          <p className="fs-5 pt-4">
+          24 horas aberta para você, oferecendo praticidade a qualquer momento. Encontre o que precisa, seja durante o dia ou na madrugada. Seja bem-vindo à conveniência que se adapta ao seu horário.
           </p>
         </div>
         <div className="container-slide">
