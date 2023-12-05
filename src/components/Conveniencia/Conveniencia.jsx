@@ -10,7 +10,7 @@ import './Conveniencia.css';
 import { useEffect, useState } from 'react';
 
 export function Conveniencia() {
-  
+
   const [activeCardIndex, setActiveCardIndex] = useState(0);
 
   const [sliderSettings, setSliderSettings] = useState({
@@ -18,7 +18,7 @@ export function Conveniencia() {
     speed: 500,
     slidesToShow: 3,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
     arrows: true,
     beforeChange: (next) => setActiveCardIndex(next),
   });
@@ -42,7 +42,7 @@ export function Conveniencia() {
         }));
       }
     };
-  
+
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => {
@@ -54,9 +54,9 @@ export function Conveniencia() {
     <>
       <section className="container-conveniencia">
         <div className="titulo-conveniencia">
-          <h2 className="fs-1">Conveniência Alvorada</h2>
+          <h2 className="conveniencia-alvorada fs-1">Conveniência Alvorada</h2>
           <p className="fs-5 pt-4">
-          24 horas aberta para você, oferecendo praticidade a qualquer momento. Encontre o que precisa, seja durante o dia ou na madrugada. Seja bem-vindo à conveniência que se adapta ao seu horário.
+            24 horas aberta para você, oferecendo praticidade a qualquer momento. Encontre o que precisa, seja durante o dia ou na madrugada. Seja bem-vindo à conveniência que se adapta ao seu horário.
           </p>
         </div>
         <div className="container-slide">
@@ -65,14 +65,13 @@ export function Conveniencia() {
               className={`slide ${activeCardIndex === 0 ? 'active-slide' : ''}`}
             >
               <Card className="item-card">
-                <Card.Img variant="top" src={imgDestilados} className="imagem-card"  />
+                <Card.Img variant="top" src={imgDestilados} className="imagem-card" />
                 <Card.Body className="card-body-slide">
                   <Card.Title className="fs-4 fw-bold text-center mb-2">
                     DESTILADOS
                   </Card.Title>
                   <Card.Text>
-                    Uma variedade de destilados, com as melhores marcas nacionais e importadas;
-                    gostos.
+                    Uma seleção premium de destilados, desde elegantes whiskies até vodkas suaves. Sabores refinados esperam por você.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -87,8 +86,7 @@ export function Conveniencia() {
                     REFRIGERANTES, ÁGUAS E SUCOS
                   </Card.Title>
                   <Card.Text>
-                    Refresque-se com nossas opções de águas, refrigerantes e
-                    sucos gelados.
+                    Você encontra uma gama refrescante, satisfaça sua sede com qualidade e variedade. Descubra o prazer em cada gole.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -104,8 +102,7 @@ export function Conveniencia() {
                     BALAS, CHICLETES E CHOCOLATES
                   </Card.Title>
                   <Card.Text>
-                    Satisfaça seu desejo por doces com nossa seleção de balas,
-                    chicletes e chocolates.
+                    Adoce seu dia com as melhores guloseimas. Sua dose diária de doçura está aqui.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -121,7 +118,7 @@ export function Conveniencia() {
                     CERVEJAS
                   </Card.Title>
                   <Card.Text>
-                    As melhores marcas, extremamente gelada a qualquer hora do dia.
+                    Uma variedade de cervejas, desde as clássicas até as artesanais, estupidamente gelada.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -138,7 +135,7 @@ export function Conveniencia() {
                   </Card.Title>
                   <Card.Text>
                     Prepare um churrasco delicioso com nossos produtos
-                    selecionados, vários tipos de cortes, para todos os gostos.
+                    selecionados, vários cortes de carnes, temperos e farofas.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -147,13 +144,13 @@ export function Conveniencia() {
               className={`slide ${activeCardIndex === 5 ? 'active-slide' : ''}`}
             >
               <Card className="item-card ">
-                <Card.Img variant="top" src={imgChips} className="imagem-card"/>
+                <Card.Img variant="top" src={imgChips} className="imagem-card" />
                 <Card.Body className="card-body-slide">
                   <Card.Title className="fs-4 fw-bold text-center mb-2">
                     SALGADINHOS
                   </Card.Title>
                   <Card.Text>
-                    Uma variedade de salgadinhos, amendoins, bolachas e outro itens de mercearia para o seu dia.
+                    Das opções clássicas às novidades gourmet, temos o petisco perfeito para todos os gostos.
                   </Card.Text>
                 </Card.Body>
               </Card>

@@ -16,7 +16,7 @@ export function Footer() {
         <div>
           <h2>Localização</h2>
           <p className="localização">
-            Av. dos Expedicionários Brasileiros, 711 <br /> Bairro Coester,{' '}
+            Av. Expedicionários Brasileiros, 711 <br /> Bairro: Jardim América,{' '}
             <br />
             Fernandópolis - SP
           </p>

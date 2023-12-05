@@ -26,7 +26,7 @@ export function Marmitaria() {
               href="https://api.whatsapp.com/send?phone=5517997248775&text=Ol%C3%A1%2C+gostaria+de+pedir+uma+marmita"
               target="_blank"
               rel="noreferrer">
-              <FaWhatsapp className="link-whatsapp" /> 
+              <FaWhatsapp className="link-whatsapp" />
             </Nav.Link>
           </div>
         </div>

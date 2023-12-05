@@ -53,7 +53,7 @@ export function Servicos() {
           </Card.Title>
           <Card.Text>
             Nossos profissionais dedicados garantem uma limpeza completa,
-            desde o exterior reluzente até os detalhes internos
+            desde o exterior reluzente até os detalhes internos.
           </Card.Text>
         </Card.Body>
       </Container>
